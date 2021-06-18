@@ -288,6 +288,20 @@
   padding-right: 2rem;
   padding-bottom: 1rem;
 }
+@media(max-width:600px){
+   .Payments_Check{
+       width: 300px;
+      
+
+   } 
+   .All_PAYMENTS{
+       width:100%;
+       padding:0;
+       display:flex;align-items:center;
+       justify-content: center;
+       flex-direction: column;
+   }
+}
 .pyment_About {
   display: flex;
   align-items: center;
