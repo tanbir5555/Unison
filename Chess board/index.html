@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess board</title>
+    <style>
+      * {
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        transition: 0.3s;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+      #root {
+        display: grid;
+        grid-template-columns: repeat(8, 120px);
+        grid-template-rows: repeat(8, 120px);
+        grid-gap: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <script>
+      function s(ele) {
+        return document.querySelector(ele);
+      }
+      function cr(ele) {
+        return document.createElement(ele);
+      }
+      let root = cr('div');
+      root.setAttribute('id', 'root');
+      let black = true;
+      let beganFrom = 'black';
+      let endIn = 'white';
+      for (let x = 1; x <= 8; x++) {
+        if (x % 2 === 0) {
+          beganFrom = 'white';
+          endIn = 'black';
+          for (let y = 1; y <= 8; y++) {
+            if (black) {
+              let div = cr('div');
+              div.setAttribute(
+                'style',
+                `height:120px;width:120px;background:${beganFrom}`
+              );
+              // alert("ehllow");
+              root.appendChild(div);
+
+              black = false;
+            } else {
+              let div = cr('div');
+              div.setAttribute(
+                'style',
+                `height:120px;width:120px;background:${endIn}`
+              );
+              root.appendChild(div);
+              black = true;
+            }
+          }
+        }else{
+            beganFrom = 'black';
+          endIn = 'white';
+          for (let y = 1; y <= 8; y++) {
+            if (black) {
+              let div = cr('div');
+              div.setAttribute(
+                'style',
+                `height:120px;width:120px;background:${beganFrom}`
+              );
+              // alert("ehllow");
+              root.appendChild(div);
+
+              black = false;
+            } else {
+              let div = cr('div');
+              div.setAttribute(
+                'style',
+                `height:120px;width:120px;background:${endIn}`
+              );
+              root.appendChild(div);
+              black = true;
+            }
+          }
+        }
+      }
+      let body = s('.container');
+      body.appendChild(root);
+    </script>
+  </body>
+</html>
