@@ -546,9 +546,14 @@
 }
 
 .internet_access .paper{
-  width:86%;
+  width:95%;
   margin: 0;
   padding: 0
+}
+@media(max-width:1100px){
+  .internet_access .paper{
+    width:86%;
+  }
 }
 
 .Data_title{
@@ -617,4 +622,87 @@
   .internet_access .li_tags::before{
     left: -15px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contacts. */
+/* contacts. */
+/* contacts. */
+/* contacts. */
+/* contacts. */
+/* contacts. */
+/* contacts. */
+/* contacts. */
+
+
+
+
+
+
+
+
+.contact_paper{
+    width:95%;
+    margin:auto;
+    margin-top:4rem;
+    display:block;
+    min-height: 633px;
+}
+
+.contact_paper .Data_title{
+  margin-top:0px;
+}
+.contact_paper .photoshop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.left_container{
+  width:56%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  min-height: 500px;
+  margin-top: 2rem;
+
+}
+
+.right_img_container img{
+  width:90%;
+  margin-top: 2rem;
+}
+.address_header{
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dotted #2bb573;
+  width:100%;
+}
+.people_container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  margin-top: 0.3rem;
+}
+.contact_img img{
+  width:80px;
+  border-radius: 7px;
+}
+.people_img{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:54%;
 }

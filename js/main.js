@@ -17,9 +17,13 @@ openMenu2.addEventListener('click', function() {
   callMenu();
  })
 
+
+
 closeBtn.addEventListener('click', function () {
     callMenu();
 });
+
+
 
 
 function callMenu(){
