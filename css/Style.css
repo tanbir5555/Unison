@@ -77,7 +77,7 @@
 .Menubar{
   position:absolute;
   left: 5%;
-  top: 7px;
+  top: 0px;
   display:none;
   cursor: pointer;
   background:rgb(203, 255, 219);
@@ -741,7 +741,7 @@
 }
 .allContacts .paper {
   height: 529px;
-  width: 400px;
+  width: 390px;
   border-radius: 24px;
   margin: auto;
   margin-top: 4rem;
@@ -770,8 +770,17 @@
   left: 0;
   top: 0;
   height: 529px;
-  width: 400px;
+  width: 100%;
   z-index: 2;
+}
+
+@media (max-width:418px){
+  .absulute_area{
+    height: 550px;
+  }
+.allContacts .paper {
+    height: 550px;}
+  
 }
 .people_image{
   height:144px;
