@@ -54,7 +54,7 @@
   width: 100%;
 }
 .menu {
-  width: 55%;
+  width: 41%;
 }
 .container {
   position: relative;
@@ -145,7 +145,7 @@
   .menu {
     position: absolute;
     width: 283px;
-    min-height: 400px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,6 +176,53 @@
   width: 100%;
   padding: 0.8em 0em;
   margin-top: 81px;
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index:8888;
+  
+  
+}
+.newsAnimation {
+  animation:comeGo 40s linear infinite;
+
+}
+@keyframes comeGo{
+  0%{
+    top:0px;
+  }24%{
+    top:0px;
+  }25%{
+    top:-100px;
+  }98%{
+    top:-100px;
+  }100%{
+    top:0px;
+
+  }
+}
+
+.newsAnimation2{
+  animation:comeGo2 40s linear infinite;
+  top:-100px;
+}
+
+@keyframes comeGo2{
+  0%{
+    top:-100px;
+
+  }24%{
+    top:-100px;
+
+  }25%{
+    top:0px;
+  }98%{
+    top:0px;
+  }100%{
+    top:-100px;
+
+
+  }
 }
 
 /* Ending Menu ====///////////////////////////////*/
@@ -184,6 +231,10 @@
 /* Ending Menu ====///////////////////////////////*/
 
 /* main intro */
+
+#Home{
+  margin-top:10rem !important;
+}
 .intro_content {
   display: flex;
   align-items: center;
@@ -784,4 +835,44 @@
   font-size: 21px;
   margin-top: 50px;;
   
+}
+
+.gmailArea{
+  font-size: 1.3rem;
+  font-weight:400;
+}
+.gmailArea strong{
+  font-weight:400;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+footer{
+  
+  width:100%;
+  height:80px;
+  background:#181818;
+  display:flex;
+  align-items: center;
+  justify-content:center;
 }

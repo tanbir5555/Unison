@@ -5,7 +5,7 @@
     background:#2BB573;
 }
 .gradient{
-    background:linear-gradient(90deg,#fff,#fff,#fff,#2BB573,#2BB573)
+    background:linear-gradient(90deg,#fff,#fff,#2BB573,#2BB573,#2BB573)
 }
 @media(max-width:800px){
 .gradient{
@@ -31,3 +31,7 @@ body{
 .contact_paper strong{
     color: #2bb573;
   }
+
+.red{
+    color:rgb(255, 53, 53)
+}  
